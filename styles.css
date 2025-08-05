@@ -1,0 +1,60 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #222;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #0055a5;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+h2 {
+  color: #0055a5;
+  margin-bottom: 15px;
+}
+
+main section {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
