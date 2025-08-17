@@ -69,6 +69,7 @@ header h1 {
   color: #618a8a;
   font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
 }
 
 .nav-list a:hover, .nav-list a.active {
@@ -76,8 +77,8 @@ header h1 {
   color: white;
 }
 
-/* Dropdown */
-.dropdown-content {
+/* Dropdown Menu */
+.nav-list li.dropdown .dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
@@ -86,29 +87,25 @@ header h1 {
   min-width: 160px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
-  padding: 5px 0;
   z-index: 100;
+  padding: 5px 0;
 }
 
-.nav-list li:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content li {
-  list-style: none;
-}
-
-.dropdown-content li a {
+.nav-list li.dropdown .dropdown-content li a {
   padding: 10px 15px;
   display: block;
   color: #618a8a;
-  font-weight: 600;
 }
 
-.dropdown-content li a:hover {
+.nav-list li.dropdown .dropdown-content li a:hover {
   background-color: #618a8a;
   color: white;
   border-radius: 5px;
+}
+
+/* Show dropdown on hover */
+.nav-list li.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Cards */
@@ -203,7 +200,16 @@ footer a:hover {
   transition: background-color 0.3s ease;
 }
 
-/* Concept badges */
+.lesson-plan a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.lesson-plan a:hover {
+  text-decoration: underline;
+}
+
+/* Concept Badges */
 .concept-badge {
   display: inline-block;
   background-color: #618a8a;
@@ -213,6 +219,7 @@ footer a:hover {
   font-size: 0.8rem;
   font-weight: 600;
   margin: 2px 4px 2px 0;
+  transition: background-color 0.3s ease;
 }
 
 .concept-badge:hover {
