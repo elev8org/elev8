@@ -4,22 +4,12 @@
   box-sizing: border-box;
 }
 
-/* Body and font */
-body {
+/* Body and Main */
+body, main {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fefcfb;
+  background: linear-gradient(160deg, #fefcfb, #e8f0f2);
   color: #3a3a3a;
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  line-height: 1.6;
-}
-
-main {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fefcfb;
-  color: #3a3a3a;
-  max-width: 800px;
+  max-width: 900px;
   margin: 30px auto;
   padding: 20px;
   line-height: 1.6;
@@ -28,20 +18,25 @@ main {
 /* Header */
 header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .logo {
-  width: 120px;
+  width: 130px;
   display: block;
   margin: 0 auto 15px auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(97,138,138,0.2);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 header h1 {
   font-size: 3rem;
-  color: #618a8a; /* soft teal */
+  color: #436363;
   margin-bottom: 10px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -49,9 +44,9 @@ header h1 {
 
 .tagline {
   font-size: 1.2rem;
-  color: #7a7a7a;
+  color: #618a8a;
   font-style: italic;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 /* Navigation */
@@ -60,33 +55,39 @@ header h1 {
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .nav-list a {
   text-decoration: none;
   color: #618a8a;
   font-weight: 600;
-  padding: 8px 15px;
+  padding: 10px 20px;
   border-radius: 30px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-list a:hover {
+.nav-list a:hover, .nav-list a.active {
   background-color: #618a8a;
   color: white;
 }
 
 /* Cards */
 .card {
-  background-color: #fcf8f6;
+  background: #ffffff;
   padding: 25px 30px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(97, 138, 138, 0.15);
+  box-shadow: 0 6px 20px rgba(97, 138, 138, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-h2 {
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(97,138,138,0.2);
+}
+
+h2, h3 {
   color: #436363;
   margin-bottom: 15px;
   font-weight: 700;
@@ -107,8 +108,8 @@ footer {
   font-size: 0.9rem;
   color: #999;
   border-top: 1px solid #ddd;
-  padding-top: 20px;
-  margin-top: 40px;
+  padding-top: 25px;
+  margin-top: 50px;
 }
 
 footer a {
@@ -121,47 +122,48 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* --- Table Container --- */
+/* Lesson Plan Table */
 .lesson-plan {
-  overflow-x: auto;  /* Horizontal scroll for small screens */
+  overflow-x: auto;
   margin-top: 20px;
 }
 
-/* --- Table Styling --- */
 .lesson-plan table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-family: Arial, sans-serif;
   font-size: 14px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-/* --- Table Header --- */
 .lesson-plan th {
   background-color: #4CAF50;
   color: white;
-  padding: 12px 10px;
+  padding: 12px 15px;
   text-align: left;
-  position: sticky; /* keeps header visible when scrolling */
+  position: sticky;
   top: 0;
+  font-weight: 600;
 }
 
-/* --- Table Cells --- */
 .lesson-plan td {
-  border: 1px solid #ddd;
-  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 15px;
   vertical-align: top;
 }
 
-/* --- Row Styling --- */
 .lesson-plan tr:nth-child(even) {
-  background-color: #f9f9f9;  /* striped effect */
+  background-color: #f9f9f9;
 }
 
 .lesson-plan tr:hover {
-  background-color: #f1f1f1;  /* hover highlight */
+  background-color: #e0f0f0;
+  transition: background-color 0.3s ease;
 }
 
-/* --- Links in Table --- */
 .lesson-plan a {
   color: #1a73e8;
   text-decoration: none;
@@ -171,10 +173,22 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* --- Responsive Font for Small Screens --- */
+/* Responsive Table Font */
 @media (max-width: 600px) {
   .lesson-plan th, .lesson-plan td {
     font-size: 13px;
     padding: 8px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
   }
 }
