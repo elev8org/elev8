@@ -15,6 +15,16 @@ body {
   line-height: 1.6;
 }
 
+main {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefcfb;
+  color: #3a3a3a;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
 /* Header */
 header {
   text-align: center;
