@@ -262,3 +262,36 @@ footer a:hover {
     padding: 8px 15px;
   }
 }
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.member-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(97, 138, 138, 0.15);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 200px;
+}
+
+.member-card img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(97, 138, 138, 0.2);
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(97, 138, 138, 0.25);
+}
+
