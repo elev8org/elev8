@@ -7,43 +7,51 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <img src="https://github.com/elev8org/elev8/blob/main/EL%20(1).jpg?raw=true" alt="Elev8 Logo" class="logo" />
-  <h1>Elev8</h1>
-  <p class="tagline">Lifting each other up through STEAM — Exploring, Creating, Achieving.</p>
-
-  <!-- Navigation -->
-  <nav>
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-
-      <!-- About with hover dropdown -->
-      <li class="dropdown">
-        <a href="about.html" class="dropbtn">About</a>
-        <ul class="dropdown-content">
-          <li><a href="about.html">About Elev8</a></li>
-          <li><a href="story.html">Our Story</a></li>
-        </ul>
-      </li>
-
-      <li><a href="project.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
+  <header>
+    <img src="https://github.com/elev8org/elev8/blob/main/EL%20(1).jpg?raw=true" alt="Elev8 Logo" class="logo" />
+    <h1>Elev8</h1>
+    <p class="tagline">Lifting each other up through STEAM — Exploring, Creating, Achieving.</p>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown-content">
+            <li><a href="about.html">Main About</a></li>
+            <li><a href="story.html">Our Story</a></li>
+          </ul>
+        </li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section class="card">
       <h2>Contact Us</h2>
-      <p>You can reach us at:</p>
+      <p>If you have questions or want to join our workshops, feel free to reach out!</p>
       <ul>
-        <li>Email: <a href="mailto:elev8org@gmail.com">elev8org@gmail.com</a></li>
-        <li>Phone: (123) 456-7890</li>
-        <li>Follow us on social media: 
-          <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a>
-        </li>
+        <li>Email: <a href="mailto:info@elev8org.ca">info@elev8org.ca</a></li>
+        <li>Phone: +1 234 567 8900</li>
+        <li>Address: 123 STEAM Street, Innovation City</li>
       </ul>
+    </section>
+
+    <section class="card">
+      <h2>Contact Form</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" style="width:100%;padding:8px;margin:8px 0;"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" style="width:100%;padding:8px;margin:8px 0;"><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" style="width:100%;padding:8px;margin:8px 0;"></textarea><br>
+
+        <button type="submit" style="background-color:#618a8a;color:white;padding:10px 20px;border:none;border-radius:20px;font-weight:600;cursor:pointer;">Send Message</button>
+      </form>
     </section>
   </main>
 
