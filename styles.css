@@ -264,14 +264,13 @@ footer a:hover {
 }
 
 /* Team Members Section */
-/* Team Members Section */
-/* Team Members Section */
+/* Team Members Section - Elevated Style */
 .team-members {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .member-card {
@@ -281,12 +280,12 @@ footer a:hover {
   padding: 25px 20px;
   width: 220px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .member-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(97,138,138,0.25);
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(97,138,138,0.25), 0 10px 10px rgba(97,138,138,0.2);
 }
 
 .member-card img {
@@ -295,18 +294,20 @@ footer a:hover {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-  box-shadow: 0 4px 12px rgba(97,138,138,0.2);
-  transition: transform 0.3s;
+  box-shadow: 0 6px 14px rgba(97,138,138,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .member-card img:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(97,138,138,0.3);
 }
 
 .member-card h3 {
   color: #436363;
   margin-bottom: 5px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .member-card p {
@@ -319,7 +320,7 @@ footer a:hover {
 @media (max-width: 600px) {
   .team-members {
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
   }
 }
