@@ -1,11 +1,10 @@
-/* --- Reset & Box Sizing --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* --- Body & Main --- */
+/* Body and Main */
 body, main {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(160deg, #fefcfb, #e8f0f2);
@@ -16,7 +15,7 @@ body, main {
   line-height: 1.6;
 }
 
-/* --- Header --- */
+/* Header */
 header {
   text-align: center;
   margin-bottom: 50px;
@@ -50,14 +49,17 @@ header h1 {
   margin-bottom: 35px;
 }
 
-/* --- Navigation --- */
+/* Navigation */
 .nav-list {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 25px;
   margin-bottom: 50px;
-  flex-wrap: wrap;
+}
+
+.nav-list li {
+  position: relative;
 }
 
 .nav-list a {
@@ -74,11 +76,7 @@ header h1 {
   color: white;
 }
 
-/* --- Dropdown Navigation --- */
-.nav-list li.dropdown {
-  position: relative;
-}
-
+/* Dropdown */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -88,17 +86,23 @@ header h1 {
   min-width: 160px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
-  z-index: 100;
   padding: 5px 0;
+  z-index: 100;
+}
+
+.nav-list li:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  list-style: none;
 }
 
 .dropdown-content li a {
   padding: 10px 15px;
   display: block;
   color: #618a8a;
-  text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .dropdown-content li a:hover {
@@ -107,11 +111,7 @@ header h1 {
   border-radius: 5px;
 }
 
-.nav-list li.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* --- Cards --- */
+/* Cards */
 .card {
   background: #ffffff;
   padding: 25px 30px;
@@ -141,7 +141,7 @@ ul li {
   margin-bottom: 8px;
 }
 
-/* --- Footer --- */
+/* Footer */
 footer {
   text-align: center;
   font-size: 0.9rem;
@@ -161,7 +161,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* --- Lesson Plan Table --- */
+/* Lesson Plan Table */
 .lesson-plan {
   overflow-x: auto;
   margin-top: 20px;
@@ -203,7 +203,7 @@ footer a:hover {
   transition: background-color 0.3s ease;
 }
 
-/* --- Concept Badges --- */
+/* Concept badges */
 .concept-badge {
   display: inline-block;
   background-color: #618a8a;
@@ -213,14 +213,13 @@ footer a:hover {
   font-size: 0.8rem;
   font-weight: 600;
   margin: 2px 4px 2px 0;
-  transition: background-color 0.3s ease;
 }
 
 .concept-badge:hover {
   background-color: #436363;
 }
 
-/* --- Responsive --- */
+/* Responsive */
 @media (max-width: 600px) {
   .lesson-plan th, .lesson-plan td {
     font-size: 13px;
@@ -237,16 +236,5 @@ footer a:hover {
 
   .tagline {
     font-size: 1rem;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-list li.dropdown .dropdown-content {
-    position: relative;
-    top: 0;
-    left: 0;
   }
 }

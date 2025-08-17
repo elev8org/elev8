@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elev8 | Contact</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <img src="https://github.com/elev8org/elev8/blob/main/EL%20(1).jpg?raw=true" alt="Elev8 Logo" class="logo" />
+    <img src="https://github.com/elev8org/elev8/blob/main/EL%20(1).jpg?raw=true" alt="Elev8 Logo" class="logo">
     <h1>Elev8</h1>
     <p class="tagline">Lifting each other up through STEAM — Exploring, Creating, Achieving.</p>
     <nav>
@@ -17,44 +18,48 @@
         <li class="dropdown">
           <a href="about.html">About</a>
           <ul class="dropdown-content">
-            <li><a href="about.html">Main About</a></li>
             <li><a href="story.html">Our Story</a></li>
           </ul>
         </li>
-        <li><a href="project.html">Projects</a></li>
+        <li><a href="project.html">Project</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
+    <!-- Contact Section -->
     <section class="card">
-      <h2>Contact Us</h2>
-      <p>If you have questions or want to join our workshops, feel free to reach out!</p>
-      <ul>
-        <li>Email: <a href="mailto:info@elev8org.ca">info@elev8org.ca</a></li>
-        <li>Phone: +1 234 567 8900</li>
-        <li>Address: 123 STEAM Street, Innovation City</li>
-      </ul>
-    </section>
+      <h2>Contact Elev8</h2>
+      <p>If you have questions, want to join our programs, or are interested in volunteering, feel free to reach out!</p>
 
-    <section class="card">
-      <h2>Contact Form</h2>
-      <form>
+      <h3>Email</h3>
+      <p><a href="mailto:info@elev8org.ca">info@elev8org.ca</a></p>
+
+      <h3>Phone</h3>
+      <p>+1 (555) 123-4567</p>
+
+      <h3>Location</h3>
+      <p>Kerrisdale Community Centre, Vancouver, BC</p>
+
+      <h3>Send Us a Message</h3>
+      <form action="#" method="POST">
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" style="width:100%;padding:8px;margin:8px 0;"><br>
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
 
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" style="width:100%;padding:8px;margin:8px 0;"><br>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
 
         <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" style="width:100%;padding:8px;margin:8px 0;"></textarea><br>
+        <textarea id="message" name="message" placeholder="Write your message here..." rows="6" required></textarea><br><br>
 
-        <button type="submit" style="background-color:#618a8a;color:white;padding:10px 20px;border:none;border-radius:20px;font-weight:600;cursor:pointer;">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Elev8 Organization</p>
   </footer>
