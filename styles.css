@@ -58,18 +58,13 @@ header h1 {
   margin-bottom: 50px;
 }
 
-.nav-list li {
-  position: relative;
-}
-
 .nav-list a {
-  padding: 10px 20px;
+  padding: 8px 15px;
   border-radius: 30px;
   text-decoration: none;
   color: #618a8a;
   font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease;
-  display: inline-block;
 }
 
 .nav-list a:hover, .nav-list a.active {
@@ -77,8 +72,12 @@ header h1 {
   color: white;
 }
 
-/* Dropdown Menu */
-.nav-list li.dropdown .dropdown-content {
+/* Dropdown */
+.nav-list li.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
@@ -91,13 +90,15 @@ header h1 {
   padding: 5px 0;
 }
 
-.nav-list li.dropdown .dropdown-content li a {
+.dropdown-content li a {
   padding: 10px 15px;
   display: block;
   color: #618a8a;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.nav-list li.dropdown .dropdown-content li a:hover {
+.dropdown-content li a:hover {
   background-color: #618a8a;
   color: white;
   border-radius: 5px;
@@ -200,16 +201,7 @@ footer a:hover {
   transition: background-color 0.3s ease;
 }
 
-.lesson-plan a {
-  color: #1a73e8;
-  text-decoration: none;
-}
-
-.lesson-plan a:hover {
-  text-decoration: underline;
-}
-
-/* Concept Badges */
+/* Concept badges */
 .concept-badge {
   display: inline-block;
   background-color: #618a8a;
@@ -243,5 +235,10 @@ footer a:hover {
 
   .tagline {
     font-size: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
   }
 }
