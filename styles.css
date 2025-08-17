@@ -263,6 +263,7 @@ footer a:hover {
   }
 }
 
+/* Team Members Section */
 .team-members {
   display: flex;
   flex-wrap: wrap;
@@ -273,25 +274,41 @@ footer a:hover {
 
 .member-card {
   background: #ffffff;
-  padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(97, 138, 138, 0.15);
+  box-shadow: 0 6px 20px rgba(97,138,138,0.15);
+  padding: 20px;
+  width: 220px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 200px;
-}
-
-.member-card img {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 12px rgba(97, 138, 138, 0.2);
 }
 
 .member-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(97, 138, 138, 0.25);
+  box-shadow: 0 12px 30px rgba(97,138,138,0.25);
 }
 
+.member-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(97,138,138,0.2);
+  transition: transform 0.3s;
+}
+
+.member-card img:hover {
+  transform: scale(1.05);
+}
+
+.member-card h3 {
+  color: #436363;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.member-card p {
+  color: #618a8a;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
