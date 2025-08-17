@@ -1,135 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elev8 | Team</title>
-<link rel="stylesheet" href="styles.css">
-<style>
-/* Team Members Section */
-.team-members {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.member-card {
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(97,138,138,0.15);
-  padding: 25px 20px;
-  width: 220px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.member-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(97,138,138,0.25);
-}
-
-.member-card img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 12px rgba(97,138,138,0.2);
-  transition: transform 0.3s;
-}
-
-.member-card img:hover {
-  transform: scale(1.05);
-}
-
-.member-card h3 {
-  color: #436363;
-  margin-bottom: 5px;
-  font-size: 1.2rem;
-}
-
-.member-card p {
-  color: #618a8a;
-  font-size: 0.95rem;
-  margin-bottom: 5px;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .team-members {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elev8 | Team</title>
+  <link rel="stylesheet" href="team.css">
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <img src="https://github.com/elev8org/elev8/blob/main/EL%20(1).jpg?raw=true" alt="Elev8 Logo" class="logo">
+    <h1>Elev8</h1>
+    <p class="tagline">Lifting each other up through STEAM — Exploring, Creating, Achieving.</p>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="team.html" class="active">Our Team</a></li>
+            <li><a href="mission.html">Our Mission</a></li>
+          </ul>
+        </li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Header -->
-<header>
-  <img src="https://github.com/elev8org/elev8/blob/main/EL%20(1).jpg?raw=true" 
-       alt="Elev8 Logo" class="logo">
-  <h1>Elev8</h1>
-  <p class="tagline">Lifting each other up through STEAM — Exploring, Creating, Achieving.</p>
-  
-  <nav>
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      
-      <li class="dropdown">
-        <a href="about.html" class="active">About ▼</a>
-        <ul class="dropdown-content">
-          <li><a href="story.html">Our Story</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="mission.html">Our Mission</a></li>
-        </ul>
-      </li>
-      
-      <li class="dropdown">
-        <a href="project.html">Projects ▼</a>
-        <ul class="dropdown-content">
-          <li><a href="current.html">Current</a></li>
-          <li><a href="past.html">Past</a></li>
-        </ul>
-      </li>
-      
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- Main Content -->
+  <main>
+    <section class="team-members">
+      <!-- Member Card -->
+      <div class="member-card">
+        <img src="https://via.placeholder.com/120" alt="Dorothy Lee">
+        <h3>Dorothy Lee</h3>
+        <p>Founder</p>
+        <p>Point Grey Secondary School</p>
+      </div>
 
-<!-- Main Content -->
-<main>
-  <section class="team-members">
-    <div class="member-card">
-      <img src="https://github.com/elev8org/elev8/blob/main/dorothy.jpg?raw=true" alt="Dorothy Lee">
-      <h3>Dorothy Lee</h3>
-      <p>Founder</p>
-      <p>Point Grey Secondary School</p>
-    </div>
+      <!-- Add more member cards below -->
+      <div class="member-card">
+        <img src="https://via.placeholder.com/120" alt="Member Name">
+        <h3>Member Name</h3>
+        <p>Role</p>
+        <p>School or Affiliation</p>
+      </div>
 
-    <div class="member-card">
-      <img src="https://via.placeholder.com/120" alt="Team Member">
-      <h3>Member Name</h3>
-      <p>Role</p>
-      <p>School/Organization</p>
-    </div>
+      <div class="member-card">
+        <img src="https://via.placeholder.com/120" alt="Member Name">
+        <h3>Member Name</h3>
+        <p>Role</p>
+        <p>School or Affiliation</p>
+      </div>
+    </section>
+  </main>
 
-    <div class="member-card">
-      <img src="https://via.placeholder.com/120" alt="Team Member">
-      <h3>Member Name</h3>
-      <p>Role</p>
-      <p>School/Organization</p>
-    </div>
-  </section>
-</main>
-
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 Elev8 Organization</p>
-</footer>
-
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Elev8 Organization</p>
+  </footer>
 </body>
 </html>
