@@ -192,3 +192,66 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+
+/* Concept Badges */
+.concept-badge {
+  display: inline-block;
+  background-color: #618a8a;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 2px 4px 2px 0;
+  transition: background-color 0.3s ease;
+}
+
+.concept-badge:hover {
+  background-color: #436363;
+}
+
+/* Lesson Plan Table Enhancements */
+.lesson-plan table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.lesson-plan th {
+  background: linear-gradient(90deg, #618a8a, #436363);
+  color: white;
+  padding: 12px 10px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.lesson-plan td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 10px;
+  vertical-align: top;
+}
+
+.lesson-plan tr:nth-child(even) {
+  background-color: #f7f5f5;
+}
+
+.lesson-plan tr:hover {
+  background-color: #e6f0f0;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Font */
+@media (max-width: 600px) {
+  .lesson-plan th, .lesson-plan td {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
