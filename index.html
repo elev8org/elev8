@@ -7,45 +7,52 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <img src="https://github.com/elev8org/elev8/blob/main/EL%20(1).jpg?raw=true" alt="Elev8 Logo" class="logo" />
-  <h1>Elev8</h1>
-  <p class="tagline">Lifting each other up through STEAM — Exploring, Creating, Achieving.</p>
+  <!-- Header -->
+  <header>
+    <img src="https://github.com/elev8org/elev8/blob/main/EL%20(1).jpg?raw=true" alt="Elev8 Logo" class="logo" />
+    <h1>Elev8</h1>
+    <p class="tagline">Lifting each other up through STEAM — Exploring, Creating, Achieving.</p>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown-content">
+            <li><a href="about.html">Main About</a></li>
+            <li><a href="story.html">Our Story</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Navigation -->
-  <nav>
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-
-      <!-- About with hover dropdown -->
-      <li class="dropdown">
-        <a href="about.html" class="dropbtn">About</a>
-        <ul class="dropdown-content">
-          <li><a href="about.html">About Elev8</a></li>
-          <li><a href="story.html">Our Story</a></li>
-        </ul>
-      </li>
-
-      <li><a href="project.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-
-
+  <!-- Main Content -->
   <main>
     <section class="card">
-      <h2>Welcome to Elev8</h2>
-      <p>
-        Elev8 is a student-led organization empowering students through STEAM education.
-      </p>
-      <p>
-        Explore our site to learn more about what we do and how you can get involved.
-      </p>
+      <h2>Welcome to Elev8!</h2>
+      <p>Elev8 is a community where students can explore science, technology, engineering, and math in ways that are creative, hands-on, and open to everyone. Our mission is to elevate the next generation of thinkers, creators, and changemakers.</p>
+    </section>
+
+    <section class="card">
+      <h2>Our Approach</h2>
+      <ul>
+        <li>Hands-on STEM projects guided by high school mentors</li>
+        <li>Creative problem-solving with coding and electronics</li>
+        <li>Encouraging curiosity, growth, and collaboration</li>
+        <li>Building confidence through exploration and achievement</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Get Involved</h2>
+      <p>Whether you’re a student, parent, or volunteer, there’s a place for you at Elev8. Explore our projects, join our workshops, or connect with our community to start lifting each other up!</p>
+      <a href="projects.html" style="display:inline-block;margin-top:15px;background-color:#618a8a;color:white;padding:10px 20px;border-radius:20px;text-decoration:none;font-weight:600;">See Projects</a>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Elev8 Organization</p>
   </footer>
