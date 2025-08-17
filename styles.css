@@ -270,7 +270,7 @@ footer a:hover {
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
-  margin-top: 20px;
+  margin: 40px 0;
 }
 
 .member-card {
@@ -319,5 +319,6 @@ footer a:hover {
   .team-members {
     flex-direction: column;
     gap: 15px;
+    align-items: center;
   }
 }
