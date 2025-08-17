@@ -120,3 +120,61 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* --- Table Container --- */
+.lesson-plan {
+  overflow-x: auto;  /* Horizontal scroll for small screens */
+  margin-top: 20px;
+}
+
+/* --- Table Styling --- */
+.lesson-plan table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* --- Table Header --- */
+.lesson-plan th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 10px;
+  text-align: left;
+  position: sticky; /* keeps header visible when scrolling */
+  top: 0;
+}
+
+/* --- Table Cells --- */
+.lesson-plan td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  vertical-align: top;
+}
+
+/* --- Row Styling --- */
+.lesson-plan tr:nth-child(even) {
+  background-color: #f9f9f9;  /* striped effect */
+}
+
+.lesson-plan tr:hover {
+  background-color: #f1f1f1;  /* hover highlight */
+}
+
+/* --- Links in Table --- */
+.lesson-plan a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.lesson-plan a:hover {
+  text-decoration: underline;
+}
+
+/* --- Responsive Font for Small Screens --- */
+@media (max-width: 600px) {
+  .lesson-plan th, .lesson-plan td {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
