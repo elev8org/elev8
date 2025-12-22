@@ -324,31 +324,31 @@ footer a:hover {
     align-items: center;
   }
 }
+/* Contact spacing */
 .contact-item {
   margin-bottom: 25px;
+  text-align: center;
 }
 
-/* General button style */
+/* Button base style (matches nav color) */
 .btn {
   display: inline-block;
-  padding: 12px 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
+  padding: 12px 30px;
+  background-color: #618a8a; /* same as Home button */
   color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px; /* rounded rectangle */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Instagram-specific styling */
+/* Hover effect */
+.btn:hover {
+  background-color: #436363;
+  transform: translateY(-2px);
+}
+
+/* Instagram button (same style, optional icon later) */
 .instagram-btn {
-  background: linear-gradient(
-    45deg,
-    #f58529,
-    #dd2a7b,
-    #8134af,
-    #515bd4
-  );
-}
-
-.instagram-btn:hover {
-  opacity: 0.85;
+  margin-top: 10px;
 }
