@@ -323,18 +323,31 @@ footer a:hover {
     gap: 20px;
     align-items: center;
   }
-/*button/
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fefcfb;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-  }
+.contact-item {
+  margin-bottom: 25px;
+}
 
-  .btn:hover {
-    background-color: #e8f0f2;
-  }
+/* General button style */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  color: white;
+}
+
+/* Instagram-specific styling */
+.instagram-btn {
+  background: linear-gradient(
+    45deg,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
+}
+
+.instagram-btn:hover {
+  opacity: 0.85;
 }
